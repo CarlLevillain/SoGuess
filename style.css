@@ -154,6 +154,7 @@ h2{
     .div-wheel {
         width: 160%;
         max-width: none; 
+        margin: 0 auto;
     }
 
     .spinBtn {
