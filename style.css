@@ -169,12 +169,12 @@ h2{
         margin: 120px;
     }
     .img-soguess {
-        width: 100px;
+        width: 200px;
         height: auto;
     }
 
     .img-extracard {
-        width: 80px;
+        width: 150px;
         height: auto;
     }
 }
