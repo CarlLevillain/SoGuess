@@ -11,12 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="container">
-        <div class="img-size">
-            <img class="img-soguess" src="images/SoGuess.png" alt="SoGuess">
-            <img class="img-extracard" src="images/ExtraCard.png" alt="ExtraCard">
-        </div>
-        <section>
+    <section class="container flex-col-responsive">
+        <div class="w-full">
+            <div class="img-size">
+                <img class="img-soguess" src="images/SoGuess.png" alt="SoGuess">
+                <img class="img-extracard" src="images/ExtraCard.png" alt="ExtraCard">
+            </div>
+        </div>  
+        <div class="w-full">
             <div class="div-wheel">
                 <div class="spinBtn">Spin</div>
                 <div class="wheel">
@@ -30,9 +32,7 @@
                     <div class="number" style="--i:8; --clr: #FA9E87"><span>Penalty</span></div>
                 </div>
             </div>
-        </section>
-        
-
+        </div>
     </section>
     <script src="script.js"></script>
 </body>
