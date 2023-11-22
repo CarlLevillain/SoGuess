@@ -169,7 +169,7 @@ h2{
         margin: 120px;
     }
     .img-size{
-        justify-content: space-around;
+        margin: 0 auto;
     }
     .img-soguess {
         width: 200px;
