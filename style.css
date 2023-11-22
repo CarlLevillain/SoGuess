@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: var(--orange);
+    background-color: var(--dark-blue);
     --dark-blue: #458BAF;
     --blue: #A3DCFF;
     --black: #00032E;
