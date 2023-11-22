@@ -39,21 +39,7 @@ h2{
 
 /* Page */
 
-/* .div-wheel{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-content: center;
-}  */ 
 
- /* .div-wheel div{
-    width: 33%;
- } */
-
-/* .button-start{
-    justify-content: center;
-    display: flex;
-} */
  
 .div-wheel{
     width: 50%;
@@ -102,8 +88,8 @@ h2{
     /* top: 0; */
     /* left: 0; */
     /* REGLER LES DIMENSIONS DE LA ROUE */
-    width: 56%;
-    height: 200%;
+    width: 300px;
+    height: 300px;
     background: #333;
     border: 4px solid var(--black);
     border-radius: 50%;
@@ -152,7 +138,8 @@ h2{
 
 @media (max-width: 500px) {
     .div-wheel {
-        width: 160%;
+        width: 150px;
+        height: 150px;
         justify-content: center;
         margin: 0 auto;
         display: block;
