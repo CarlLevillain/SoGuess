@@ -28,6 +28,11 @@ body{
     align-items: center;
 }
 
+.justify-center {
+    display: flex;
+    justify-content: center;
+}   
+
 .w-full {
     width: 100%;    
 }
