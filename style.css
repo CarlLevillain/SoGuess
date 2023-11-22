@@ -148,23 +148,23 @@ h2{
 
 /* Responsive */
 
-@media (max-width : 500px) {
-    .div-wheel{
-        width: 160px;
-        height: 160px;
-        justify-content: center;
-        margin: 0 auto;
-        display: block;
+
+
+@media (max-width: 500px) {
+    .div-wheel {
+        width: 90%; 
+        max-width: none; 
     }
-    .spinBtn{
-        margin: 120px;
+
+    .spinBtn {
+        margin-top: 120px;
     }
-    h1{
+
+    h1 {
         font-size: 50px;
     }
-    h2{
+
+    h2 {
         font-size: 25px;
     }
-    
 }
-
