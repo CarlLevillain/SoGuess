@@ -153,7 +153,8 @@ h2{
 @media (max-width: 500px) {
     .div-wheel {
         width: 160%;
-        max-width: none; 
+        max-width: none;
+        justify-content: center;
         margin: 0 auto;
     }
 
