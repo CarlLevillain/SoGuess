@@ -152,7 +152,7 @@ h2{
 
 @media (max-width: 500px) {
     .div-wheel {
-        
+        width: 160%;
         justify-content: center;
         margin: 0 auto;
         display: block;
@@ -160,9 +160,6 @@ h2{
 
     .spinBtn {
         margin-top: 120px;
-    }
-    .wheel{
-        width: 160%;
     }
     h1 {
         font-size: 50px;
