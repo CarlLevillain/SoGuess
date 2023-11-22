@@ -23,3 +23,4 @@ let bonus =[
     '+2 point for your team',
     'You gain 5 sec par card this effect will be activated for the next round'
 ]
+
