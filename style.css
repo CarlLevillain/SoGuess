@@ -168,6 +168,9 @@ h2{
     .spinBtn {
         margin: 120px;
     }
+    .img-size{
+        justify-content: space-around;
+    }
     .img-soguess {
         width: 200px;
         height: auto;
