@@ -156,6 +156,7 @@ h2{
         max-width: none;
         justify-content: center;
         margin: 0 auto;
+        display: block;
     }
 
     .spinBtn {
