@@ -31,6 +31,11 @@ body{
 .justify-center {
     display: flex;
     justify-content: center;
+}  
+
+.justify-between {
+    display: flex;
+    justify-content: space-between;
 }   
 
 .w-full {
@@ -72,8 +77,6 @@ h2{
 }
 
 /* Page */
-
-
  
 .div-wheel{
     width: 50%;
@@ -168,13 +171,10 @@ h2{
 
 
 /* Responsive */
-
-
-
 @media (max-width: 500px) {
-    .div-wheel {
-        width: 100px;
-        height: 100px;
+    .wheel {
+        width: 250px;
+        height: 250px;
         justify-content: center;
         margin: 50px;
         display: block;
@@ -184,11 +184,13 @@ h2{
         width: 100%;
     }
     .spinBtn {
-        margin: 120px;
+        margin: 95px;
     }
     .img-size{
         margin-top: 20px;
-        gap: 40px;
+        gap: 2rem;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .img-soguess {
         width: 50%;
