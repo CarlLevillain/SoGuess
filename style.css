@@ -20,7 +20,13 @@ body{
     margin: auto;
 }
 
-
+.flex-col-responsive {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
 
 /* Titres */
 
@@ -150,6 +156,7 @@ h2{
     font-size: 0.5em;
     font-weight: 500;
 }
+
 
 
 /* Responsive */
