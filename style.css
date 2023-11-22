@@ -42,11 +42,13 @@ h2{
 .img-soguess{
     width: 450px;
     height: auto;
+    justify-content: center;
 }
 
 .img-extracard{
     width: 250px;
     height: auto;
+    justify-content: center;
 }
 
 /* Page */
