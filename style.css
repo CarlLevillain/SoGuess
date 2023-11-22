@@ -79,7 +79,7 @@ h2{
 /* Page */
  
 .div-wheel{
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
