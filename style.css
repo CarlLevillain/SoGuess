@@ -165,19 +165,23 @@ h2{
         display: block;
     }
 
+    .container{
+        width: 100%;
+    }
     .spinBtn {
         margin: 120px;
     }
     .img-size{
-        margin: 0 auto;
+        margin-top: 20px;
+        gap: 40px;
     }
     .img-soguess {
-        width: 200px;
+        width: 50%;
         height: auto;
     }
 
     .img-extracard {
-        width: 150px;
+        width: 50%;
         height: auto;
     }
 }
