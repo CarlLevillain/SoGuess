@@ -169,13 +169,15 @@ h2{
 
 @media (max-width : 450px) {
     .div-wheel{
-        width: 75vw;
         justify-content: center;
         margin: 0 auto;
         display: block;
     }
     .spinBtn{
         margin: 120px;
+    }
+    .wheel{
+        width: 75vw;
     }
     h1{
         font-size: 50px;
