@@ -92,7 +92,7 @@ h2{
 
 .spinBtn{
     position: absolute;
-    margin-top: 60px;
+    margin-top: 150px;
     width: 60px;
     height: 60px;
     background: var(--white);
@@ -184,6 +184,7 @@ h2{
     }
     .spinBtn {
         margin: 95px;
+        margin-top: 60px;
     }
     .img-size{
         margin-top: 20px;
