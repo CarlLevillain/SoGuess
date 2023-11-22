@@ -28,6 +28,10 @@ body{
     align-items: center;
 }
 
+.w-full {
+    width: 100%;    
+}
+
 /* Titres */
 
 h1{
