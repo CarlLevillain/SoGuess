@@ -155,7 +155,7 @@ h2{
 .number span{
     position: relative;
     transform: rotate(45deg);
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 700;
     color: var(--black);
     /* text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.15); */
