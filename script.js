@@ -7,6 +7,7 @@ spinBtn.onclick = function () {
     // Désactive le bouton pendant l'animation
     spinBtn.classList.add('disabled');
 
+
     var value = Math.ceil(Math.random() * 3600);
     wheel.style.transition = 'transform 5s ease-in-out';
     wheel.style.transform = 'rotate(' + value + 'deg)';
@@ -29,15 +30,21 @@ spinBtn.onclick = function () {
         console.log(degrees);
         console.log(segmentSize);
         console.log(winningSegmentIndex);
+
         let tbody = document.getElementById('text-challenge');
+        
         if (winningContent === bonus1.textContent || winningContent === bonus3.textContent || winningContent === bonus5.textContent || winningContent === bonus7.textContent) {
             let textbonus = bonus[Math.floor(Math.random() * 6)]
             console.log(textbonus)
-            tbody.innerHTML += `<tr>
+            tbody.innerHTML = `<tr>
             <td> ` + textbonus + ` </td>
             </tr>` 
         } else {
-            console.log(penalty[Math.floor(Math.random() * 6)]);
+            let textpenalty = penalty[Math.floor(Math.random() * 6)]
+            console.log(textpenalty)
+            tbody.innerHTML = `<tr>
+            <td> ` + textpenalty + ` </td>
+            </tr>` 
         }
 
         
