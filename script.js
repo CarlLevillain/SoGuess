@@ -8,7 +8,9 @@ spinBtn.onclick = function () {
     spinBtn.classList.add('disabled');
 
 
-    var value = Math.ceil(Math.random() * 3600);
+    // var value = Math.ceil(Math.random() * 3600);
+    var value = Math.ceil(Math.random() * 200);
+
     wheel.style.transition = 'transform 5s ease-in-out';
     wheel.style.transform = 'rotate(' + value + 'deg)';
 
@@ -26,22 +28,31 @@ spinBtn.onclick = function () {
         var penalty4 = document.getElementById('penalty4');
         var penalty6 = document.getElementById('penalty6');
         var penalty8 = document.getElementById('penalty8');
-        console.log(winningContent);
-        console.log(degrees);
-        console.log(segmentSize);
-        console.log(winningSegmentIndex);
+        // console.log(winningContent);
+        // console.log(degrees);
+        // console.log(segmentSize);
+        // console.log(winningSegmentIndex);
 
         let tbody = document.getElementById('text-challenge');
         
         if (winningContent === bonus1.textContent || winningContent === bonus3.textContent || winningContent === bonus5.textContent || winningContent === bonus7.textContent) {
             let textbonus = bonus[Math.floor(Math.random() * 6)]
-            console.log(textbonus)
-            tbody.innerHTML = `<tr>
-            <td> ` + textbonus + ` </td>
-            </tr>` 
+            console.log(bonus)
+            if (textbonus === undefined || textbonus === undefined || textbonus === undefined || textbonus === undefined)  {
+                tbody.innerHTML = `<tr>
+                <td> ` + bonus[Math.floor(Math.random() * 6)] + ` </td>
+                </tr>`
+                // console.log('bug fix')
+            }
+            else {
+                // console.log(textbonus)
+                tbody.innerHTML = `<tr>
+                <td> ` + textbonus + ` </td>
+                </tr>` 
+            }
         } else {
             let textpenalty = penalty[Math.floor(Math.random() * 6)]
-            console.log(textpenalty)
+            // console.log(textpenalty)
             tbody.innerHTML = `<tr>
             <td> ` + textpenalty + ` </td>
             </tr>` 
