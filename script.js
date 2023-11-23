@@ -19,10 +19,10 @@ spinBtn.onclick = function () {
         var winningContent = document.querySelectorAll('.number')[winningSegmentIndex].textContent;
         if (winningContent = 'bonus') {
             console.log(bonus);
-        };
-        if (winningContent = 'penalty'){
+        } else {
             console.log(penalty);
-        };
+        }
+
         
         // Réactive le bouton une fois l'animation terminée
         spinBtn.classList.remove('disabled');
