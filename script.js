@@ -8,8 +8,8 @@ spinBtn.onclick = function () {
     spinBtn.classList.add('disabled');
 
 
-    // var value = Math.ceil(Math.random() * 3600);
-    var value = Math.ceil(Math.random() * 200);
+    var value = Math.ceil(Math.random() * 3600);
+    // var value = Math.ceil(Math.random() * 200);
 
     wheel.style.transition = 'transform 5s ease-in-out';
     wheel.style.transform = 'rotate(' + value + 'deg)';
@@ -36,11 +36,11 @@ spinBtn.onclick = function () {
         let tbody = document.getElementById('text-challenge');
         
         if (winningContent === bonus1.textContent || winningContent === bonus3.textContent || winningContent === bonus5.textContent || winningContent === bonus7.textContent) {
-            let textbonus = bonus[Math.floor(Math.random() * 6)]
-            console.log(bonus)
-            if (textbonus === undefined || textbonus === undefined || textbonus === undefined || textbonus === undefined)  {
+            let textbonus = bonus[Math.floor(Math.random() * 4)]
+            // console.log(bonus)
+            if (textbonus === undefined)  {
                 tbody.innerHTML = `<tr>
-                <td> ` + bonus[Math.floor(Math.random() * 6)] + ` </td>
+                <td> +15 sec on the timer for your team </td>
                 </tr>`
                 // console.log('bug fix')
             }
