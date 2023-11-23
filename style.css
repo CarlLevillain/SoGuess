@@ -170,7 +170,7 @@ h2{
 
 .spinBtn.disabled {
     cursor: not-allowed;
-    opacity: 0.5; /* ou une autre valeur pour indiquer qu'il est désactivé */
+    opacity: 1; /* ou une autre valeur pour indiquer qu'il est désactivé */
     pointer-events: none; /* Empêche les clics pendant que le bouton est désactivé */
 }
 
