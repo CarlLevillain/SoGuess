@@ -18,10 +18,10 @@ spinBtn.onclick = function () {
         var winningSegmentIndex = Math.floor((360 - degrees) / segmentSize);
         var winningContent = document.querySelectorAll('.number')[winningSegmentIndex].textContent;
         if (winningContent = 'bonus') {
-            console.log(bonus);
+            console.log('bonus is 'bonus);
         }
-        else{
-            console.log(penalty);
+        else if (winningContent = 'penalty'){
+            console.log('penalty is 'penalty);
         }
         
         // Réactive le bouton une fois l'animation terminée
