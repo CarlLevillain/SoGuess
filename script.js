@@ -13,7 +13,7 @@ spinBtn.onclick = function () {
 
     setTimeout(function () {
         wheel.style.transition = 'none';
-        var degrees = value % 360;
+        var degrees = value;
         var segmentSize = 360 / numberOfOptions;
         var winningSegmentIndex = Math.floor((360 - degrees) / segmentSize);
         var winningContent = document.querySelectorAll('.number')[winningSegmentIndex].textContent;
