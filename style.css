@@ -168,7 +168,11 @@ h2{
     font-weight: 500;
 }
 
-
+.spinBtn.disabled {
+    cursor: not-allowed;
+    opacity: 0.5; /* ou une autre valeur pour indiquer qu'il est désactivé */
+    pointer-events: none; /* Empêche les clics pendant que le bouton est désactivé */
+}
 
 /* Responsive */
 @media (max-width: 500px) {

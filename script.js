@@ -1,23 +1,29 @@
 let wheel = document.querySelector('.wheel');
 let spinBtn = document.querySelector('.spinBtn');
 let value = Math.ceil(Math.random() * 3600);
+var numberOfOptions = 8;
 
-var numberOfOptions = 8; // Nombre total de cases sur la roulette
+spinBtn.onclick = function () {
+    // Désactive le bouton pendant l'animation
+    spinBtn.classList.add('disabled');
 
-spinBtn.onclick = function(){
     var value = Math.ceil(Math.random() * 3600);
-    wheel.style.transform = "rotate(" + value + "deg)";
+    wheel.style.transition = 'transform 5s ease-in-out';
+    wheel.style.transform = 'rotate(' + value + 'deg)';
 
-    setTimeout(function() {
-        var degrees = value % 360; // Obtenez l'angle réel après la rotation
-        var segmentSize = 360 / numberOfOptions; // Taille d'un segment en degrés
+    setTimeout(function () {
+        wheel.style.transition = 'none';
+        var degrees = value % 360;
+        var segmentSize = 360 / numberOfOptions;
         var winningSegmentIndex = Math.floor((360 - degrees) / segmentSize);
-
-        // Récupérez le contenu de la case gagnante
         var winningContent = document.querySelectorAll('.number')[winningSegmentIndex].textContent;
-        console.log(winningContent); // Affichez le contenu de la case gagnante
-    }, 5000); // Assurez-vous que ce délai correspond à la durée de l'animation
+        console.log(winningContent);
+        
+        // Réactive le bouton une fois l'animation terminée
+        spinBtn.classList.remove('disabled');
+    }, 5000);
 };
+
 
 let penalty = [
     '-15 seconds on the timer for the other team',
