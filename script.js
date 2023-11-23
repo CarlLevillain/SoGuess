@@ -15,9 +15,26 @@ spinBtn.onclick = function () {
         wheel.style.transition = 'none';
         var degrees = value % 360;
         var segmentSize = 360 / numberOfOptions;
-        var winningSegmentIndex = Math.floor((360 - degrees) / segmentSize);
-        var winningContent = document.querySelectorAll('.number')[winningSegmentIndex].textContent;
+        var winningSegmentIndex = Math.floor((380 - degrees) / segmentSize);
+        var winningContent = document.querySelectorAll('.number')[winningSegmentIndex]?.textContent;
+        var bonus1 = document.getElementById('bonus1');
+        var bonus3 = document.getElementById('bonus3');
+        var bonus5 = document.getElementById('bonus5');
+        var bonus7 = document.getElementById('bonus7');
+        var penalty2 = document.getElementById('penalty2');
+        var penalty4 = document.getElementById('penalty4');
+        var penalty6 = document.getElementById('penalty6');
+        var penalty8 = document.getElementById('penalty8');
         console.log(winningContent);
+        console.log(degrees);
+        console.log(segmentSize);
+        console.log(winningSegmentIndex);
+        if (winningContent === bonus1.textContent || winningContent === bonus3.textContent || winningContent === bonus5.textContent || winningContent === bonus7.textContent) {
+            console.log(bonus[Math.floor(Math.random() * 6)])
+        } else {
+            console.log(penalty[Math.floor(Math.random() * 6)]);
+        }
+
         
         // Réactive le bouton une fois l'animation terminée
         spinBtn.classList.remove('disabled');
