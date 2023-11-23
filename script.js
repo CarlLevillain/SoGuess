@@ -29,8 +29,13 @@ spinBtn.onclick = function () {
         console.log(degrees);
         console.log(segmentSize);
         console.log(winningSegmentIndex);
+        let tbody = document.getElementById('text-challenge');
         if (winningContent === bonus1.textContent || winningContent === bonus3.textContent || winningContent === bonus5.textContent || winningContent === bonus7.textContent) {
-            console.log(bonus[Math.floor(Math.random() * 6)])
+            let textbonus = bonus[Math.floor(Math.random() * 6)]
+            console.log(textbonus)
+            tbody.innerHTML += `<tr>
+            <td> ` + textbonus + ` </td>
+            </tr>` 
         } else {
             console.log(penalty[Math.floor(Math.random() * 6)]);
         }
