@@ -118,6 +118,9 @@ h2{
     height: 30px;
     background: var(--white);
     clip-path: polygon(50% 0,15% 100%, 85% 100%);
+    border: 2px solid rgba(0, 0, 0, 0.75); /* Add border styles as needed */
+    box-sizing: border-box; /* Include the border in the element's total width and height */
+
 }
 
 .wheel{
