@@ -5,7 +5,7 @@ var numberOfOptions = 8;
 
 spinBtn.onclick = function () {
     // Désactive le bouton pendant l'animation
-    // spinBtn.classList.add('disabled');
+    spinBtn.classList.add('disabled');
 
     var value = Math.ceil(Math.random() * 3600);
     wheel.style.transition = 'transform 5s ease-in-out';
@@ -20,7 +20,7 @@ spinBtn.onclick = function () {
         console.log(winningContent);
         
         // Réactive le bouton une fois l'animation terminée
-        // spinBtn.classList.remove('disabled');
+        spinBtn.classList.remove('disabled');
     }, 5000);
 };
 
