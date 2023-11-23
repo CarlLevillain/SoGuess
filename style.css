@@ -118,13 +118,6 @@ h2{
     height: 30px;
     background: var(--white);
     clip-path: polygon(50% 0,15% 100%, 85% 100%);
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 15px solid var(--white);
-    border-top: 15px solid transparent;
-    border: 2px solid rgba(0, 0, 0, 0.75);
-    box-sizing: border-box;
-
 }
 
 .wheel{
