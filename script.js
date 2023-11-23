@@ -17,7 +17,12 @@ spinBtn.onclick = function () {
         var segmentSize = 360 / numberOfOptions;
         var winningSegmentIndex = Math.floor((360 - degrees) / segmentSize);
         var winningContent = document.querySelectorAll('.number')[winningSegmentIndex].textContent;
-        console.log(winningContent);
+        if (winningContent = 'bonus') {
+            console.log(bonus);
+        }
+        else{
+            console.log(penalty);
+        }
         
         // Réactive le bouton une fois l'animation terminée
         spinBtn.classList.remove('disabled');
